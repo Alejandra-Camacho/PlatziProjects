@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    background: linear-gradient(#21C08B, #AB88FF);
+    /* background-color: #8F57FD; */
+    font-family: 'Mulish', sans-serif;
+}
+
+.header {
+    /* background-color: #8F57FD; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.login {
+    /* background: linear-gradient(#21C08B, #AB88FF); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #FFF;
+    border-radius: 40px;
+    color: #FFF;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 14px;
+}
+
+.login__container--remember-me {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a {
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__container--social-media>div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login__container--social-media>div>img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login__container--register a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+
+.login__container--sesion {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login__container--sesion a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.login__container--sesion a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #FFF;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: #FFF;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 25px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+}

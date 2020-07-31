@@ -1,0 +1,15 @@
+extend components/plantilla.pug
+block contenidos
+    section.intro
+        .intro__imagen: img(src="images/imagen.png", alt="Imagen")
+        .intro__contenido
+            //- Uso de variables
+            h2 #{titulo}
+            p Lorem ipsum, dolor sit amet consectetur   adipisicing elit. Illum sit delectus quis perferendis totam animi! Libero voluptatibus tempore magni a.
+                span Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            a.boton(href="#") Leer más
+    main.contenido
+        //- Uso del mixin
+        +caja('imagen.png', titulos[0], 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.')
+        +caja('imagen.png', titulos[1], 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.')
+        +caja('imagen.png', titulos[2], 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.')

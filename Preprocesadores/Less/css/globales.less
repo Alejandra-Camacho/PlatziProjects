@@ -1,0 +1,37 @@
+@color-claro: #FFF;
+@color-primario: #333;
+@color-secundario: #8841DA;
+@color-variacion: #012179;
+@fuente-titulos: 'Oswald', sans-serif;
+@fuente-textos: 'Lato', sans-serif;
+@fuente-base: 18px;
+
+.sobra-caja {
+    box-shadow: 0 5px 15px 0 fade(@color-primario, 30%);
+}
+
+.Oswald {
+    font-family: @fuente-titulos;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.fuente(@font-size) {
+    font-size: @font-size;
+    line-height: @font-size + 10%;
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: @fuente-textos;
+    color: @color-primario;
+    .fuente(@fuente-base);
+}
+
+h1,h2,h3 {
+    margin: 0;
+    .Oswald
+}
